@@ -35,7 +35,7 @@ She saves the link and moves abroad.
 
 In t=1, Alice needs to pay Bob for his service.
 <br>Bob enters the amount on his POS, which is connected to the Internet and stores the amount on a temporary memory, activates the NFC sensor and waits for the LNURL-withdraw link.
-<br>Alice send the link offline, using her phone NFC sensor.
+<br>Alice sends the link offline, using her phone NFC sensor.
 <br>Bob's POS receives the link and starts the negotiation with Alice's server.
 <br>If the negotiation is good, Bob receives the payment, otherwise his POS gives an error.
 <br>Alice has paid Bob.
