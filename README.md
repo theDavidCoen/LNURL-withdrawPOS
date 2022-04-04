@@ -39,3 +39,30 @@ In t=1, Alice needs to pay Bob for his service.
 <br>Bob's POS receives the link and starts the negotiation with Alice's server.
 <br>If the negotiation is good, Bob receives the payment, otherwise his POS gives an error.
 <br>Alice has paid Bob.
+
+## Differencies between BOLT11 invoice, LNURL-withdraw, LNURL-pay and LNURL-withdrawPOS flows
+
+**Normal BOLT11 invoice:**
+- Payer must be online to pay
+- Payee/Merchant must be online to receive
+- Payee/Merchant doesn't need (but can) to specify an amount to receive. 
+- Payee/Merchant tipically shows a QR code or sends a textual Lightning invoice.
+
+**LNURL-pay:**
+- Payer must be online to decode the LNURL-pay link and pay
+- Payee/Merchant must be online to receive
+- Payee/Merchant doesn't need (but can) to specify an amount to receive. 
+- Payee/Merchant tipically shows a QR code or sends a textual LNURL.
+
+**LNURL-withdraw:**
+- Payer must be online to ask the server to create the LNURL link/QR code
+- Payee/Merchant must be online to decode the LNURL-withdraw link and receive
+- Payee/Merchant must specify the amount to receive (withdraw) **in the aftermath**, selecting from a range (minWithdrawable/maxWithdrawable)
+- Payee/Merchant tipically scans a QR code or requests a textual LNURL.
+
+**LNURL-withdrawPOS:**
+- Payer can be offline, its server is always online
+- Payee/Merchant must be online to decode the LNURL-withdraw link and receive
+- Payee/Merchant must specify the amount to receive (withdraw) **in advance** 
+- Payer/Merchant doesn't need to scan the QR code or request a textual LNURL, but just waits for the payer to send the LNURL-withdraw link via NFC
+
