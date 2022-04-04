@@ -9,7 +9,7 @@ Then the wallet tipically asks the user to enter an amount and under the hood it
 2. Enter the amount to receive
 3. Confirm
 
-**In this Repo I propose a new LNURL sub-protocol, I temporary called LNURL-withdrawPOS, which sees the interaction between the user and a POS, possibly equipped with a NFC sensor.**
+**In this repo I propose a new LNURL sub-protocol, I temporary called LNURL-withdrawPOS, which sees the interaction between the user and a POS, possibly equipped with a NFC sensor.**
 
 ### Flowchart
 
