@@ -9,7 +9,7 @@ Then the wallet tipically asks the user to enter an amount and under the hood it
 2. Enter the amount to receive
 3. Confirm
 
-**In this repo I propose a new LNURL sub-protocol, I temporary called LNURL-withdrawPOS, which sees the interaction between the user and a POS, possibly equipped with a NFC sensor.**
+**In this repo I propose a new LNURL flow, I temporary called LNURL-withdrawPOS, which sees the interaction between the user and a POS, possibly equipped with a NFC sensor.**
 
 ### Flowchart
 
@@ -23,7 +23,7 @@ Yes, we have LNURL-pay and the merchant/payee can already generate a LNURL link 
 The problem here is that the payer must be online in order to pay the invoice and, as far as I know, cannot delegate the payee for the online part of the flow (GET requests, invoice payment...)
 
 ### An "offline" payer.
-With this flow the users can make "offline" payments and this completely change the UX of a Lightning payment: they could reserve a part of their funds on a LN wallet for "offline" payments in a LNURL-withdrawPOS string, so they can use it offline, for example when they are abroad and don't have a stable connection or have roaming issues.
+With this flow the users can make "offline" payments and this completely change the UX of a Lightning payment: they could reserve a part of their funds on a LN wallet for "offline" payments in a LNURL-withdraw string, so they can use it offline, for example when they are abroad and don't have a stable connection or have roaming issues.
 They could also define sub-balances in their wallet, so once the reserved funds are ended, no other funds in their wallet is touched.
 
 ![LNURL-withdrawPOS in time](https://user-images.githubusercontent.com/38695835/161559784-7ae96a0e-1e61-4ae8-8a0a-f86ee1900d74.png)
@@ -35,7 +35,7 @@ She saves the link and moves abroad.
 
 In t=1, Alice needs to pay Bob for his service.
 <br>Bob enters the amount on his POS, which is connected to the Internet and stores the amount on a temporary memory, activates the NFC sensor and waits for the LNURL-withdraw link.
-<br>Alice sends the link offline, using her phone NFC sensor.
+<br>Alice sends the link offline, using her phone NFC sensor or a NFC card (or other physical support).
 <br>Bob's POS receives the link and starts the negotiation with Alice's server.
 <br>If the negotiation is good, Bob receives the payment, otherwise his POS gives an error.
 <br>Alice has paid Bob.
@@ -50,12 +50,12 @@ In t=1, Alice needs to pay Bob for his service.
 
 **LNURL-pay:**
 - Payer must be online to decode the LNURL-pay link and pay
-- Payee/Merchant must be online to receive
+- Payee/Merchant must be online to ask the server to create the LNURL-pay link and receive
 - Payee/Merchant doesn't need (but can) to specify an amount to receive. 
 - Payee/Merchant tipically shows a QR code or sends a textual LNURL.
 
 **LNURL-withdraw:**
-- Payer must be online to ask the server to create the LNURL link/QR code
+- Payer must be online to ask the server to create the LNURL link
 - Payee/Merchant must be online to decode the LNURL-withdraw link and receive
 - Payee/Merchant must specify the amount to receive (withdraw) **in the aftermath**, selecting from a range (minWithdrawable/maxWithdrawable)
 - Payee/Merchant tipically scans a QR code or requests a textual LNURL.
