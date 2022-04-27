@@ -1,5 +1,5 @@
 # LNURL-withdrawPOS
-## A new LNURL-withdraw flow 
+## A LNURL-withdraw flow for POS
 
 **LNURL-withdraw** is a bech32-encoded HTTPS query string or sub-protocol of [LNURL](https://github.com/fiatjaf/lnurl-rfc) which gives the users the ability to receive funds via Lightning Network without the need of manually create an invoice.
 <br>Users scan a QRcode or paste the LNURL-withdraw link into their wallet, this does a query to a server and gets a JSON with some info, such as the max amount the user can receive, the min amount the user can request, etc.
@@ -9,7 +9,7 @@ Then the wallet tipically asks the user to enter an amount and under the hood it
 2. Enter the amount to receive
 3. Confirm
 
-**In this repo I propose a new LNURL flow, I temporary called LNURL-withdrawPOS, which sees the interaction between the user and a POS, possibly equipped with a NFC sensor.**
+**In this repo I try to schematize a LNURL-withdraw flow for POS, I temporary called LNURL-withdrawPOS, which sees the interaction between the user and a POS, possibly equipped with a NFC sensor.**
 
 ### Flowchart
 
