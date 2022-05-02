@@ -66,3 +66,18 @@ In t=1, Alice needs to pay Bob for his service.
 - Payee/Merchant must specify the amount to receive (withdraw) **in advance** 
 - Payer/Merchant doesn't need to scan the QR code or request a textual LNURL, but just waits for the payer to send the LNURL-withdraw link via NFC
 
+## Security concerns
+Since a LNURL-withdraw link is static, it's possible for a malicious actor to save the link and use it in t=2 without the owner consensus.
+This attack should be prevented and I see two mainly solutions:
+1. PIN/Biometric confirmation
+2. Disposable cards
+
+**PIN/Biometric confirmation**
+<br>I think it's possible to add a PIN request to the LNURL-withdraw link, so the user's server asks the POS for a secret (the PIN) and gives an error if no secret/incorrect secret is provided. If the payer uses the app offline, this could require a Biometric confirmation and send the secret to the POS via NFC.
+<br>Cons: I believe if the secret is static, it could be saved by the malicious POS and used in t=2. To investigate.
+
+**Disposable links**
+<br>Disposable cards are widely adopted by fiat services, such as Revolut, for example, but also by Lightning services with fiat ramp, such as Moon.
+A user can create a card and spend the entire amount, then the app forget the card details and it can't be used anymore.
+This may also exist here: **whenever the user spend sats using the LNURL-withdraw link, this could be "destroyed" and a new LNURL-withdraw link could be created, which "contains" the change.**
+
