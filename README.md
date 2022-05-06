@@ -81,3 +81,8 @@ This attack should be prevented and I see two mainly solutions:
 A user can create a card and spend the entire amount, then the app forget the card details and it can't be used anymore.
 This may also exist here: **whenever the user spend sats using the LNURL-withdraw link, this could be "destroyed" and a new LNURL-withdraw link could be created, which "contains" the change.**
 
+## Implementations that use the LNURL-withdrawPOS flow or a similar one
+
+ Name | Creator  | Auto-active NFC | Further info |
+ ------------ | ------------- | ------------- | ------------- | 
+[BTCpay's LNURL NFC Support plugin](https://github.com/btcpayserver/btcpayserver-plugins) | [Andrew Camilleri](https://github.com/Kukks) | NO, physical button | User taps on "Scan NFC", user taps device with lnurl-withdraw, bolt11 sent to lnurl-w endpoint  |
