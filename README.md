@@ -66,7 +66,7 @@ In t=1, Alice needs to pay Bob for his service.
 - Payee/Merchant must specify the amount to receive (withdraw) **in advance** 
 - Payer/Merchant doesn't need to scan the QR code or request a textual LNURL, but just waits for the payer to send the LNURL-withdraw link via NFC
 
-## Security concerns
+## Security concerns in regards to LNURL-withdraw links
 Since a LNURL-withdraw link is static, it's possible for a malicious actor to save the link and use it in t=2 without the owner consensus.
 This attack should be prevented and I see two mainly solutions:
 1. PIN/Biometric confirmation
