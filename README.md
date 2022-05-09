@@ -92,3 +92,9 @@ This may also exist here: **whenever the user spend sats using the LNURL-withdra
  Name | Creator  | Auto-active NFC | Further info |
  ------------ | ------------- | ------------- | ------------- | 
 [BTCpay's LNURL NFC Support plugin](https://github.com/btcpayserver/btcpayserver-plugins) | [Andrew Camilleri](https://github.com/Kukks) | NO, merchant needs to tap a button | User taps on "Scan NFC", user taps device with lnurl-withdraw, bolt11 sent to lnurl-w endpoint  |
+
+
+## Practical Examples ##
+In this video, the payment has been sent to my BTCpay POS, which has a plugin that enables the NFC sensor (LNURL NFC Support plugin by Andrew Camilleri).
+Please note that the version is 1.0.1 so it's still early and that I had a bit of difficulty to find the NFC sensor on the back of my phone.
+<br>[![Watch the video](https://img.youtube.com/vi/4m-FQoUAs50/sddefault.jpg)](https://youtu.be/4m-FQoUAs50)
