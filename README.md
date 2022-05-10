@@ -96,5 +96,5 @@ This may also exist here: **whenever the user spend sats using the LNURL-withdra
 
 ## Practical Examples ##
 In this video, the payment has been sent to my BTCpay POS, which has a plugin that enables the NFC sensor (LNURL NFC Support plugin by Andrew Camilleri).
-Please note that the version is 1.0.1 so it's still early and that I had a bit of difficulty to find the NFC sensor on the back of my phone.
+<br>Please note that the version is 1.0.1 so it's still early and that I had a bit of difficulty to find the NFC sensor on the back of my phone. The next version of the plugin will have textual feedback to improve the UX.
 <br>[![Watch the video](https://img.youtube.com/vi/4m-FQoUAs50/sddefault.jpg)](https://youtu.be/4m-FQoUAs50)
