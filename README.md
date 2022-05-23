@@ -85,7 +85,8 @@ A user can create a card and spend the entire amount, then the app forget the ca
 This may also exist here: **whenever the user spend sats using the LNURL-withdraw link, this could be "destroyed" and a new LNURL-withdraw link could be created, which "contains" the change.**
 
 **NTAG 424**
-<br>
+<br>This kind of tags give a great level of interaction and encryption.
+<br>This solution would require to implement a checking system server-side, possibly with a new LNbits plugin, so the server can check the LNURL links, add a value to a counter and interact with a private key holded in the card.
 
 ## Implementations that use the LNURL-withdrawPOS flow or a similar one
 **Please note**: before adding your implementation to this list, be sure it is:
