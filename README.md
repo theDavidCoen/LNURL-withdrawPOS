@@ -95,6 +95,7 @@ open source, fully interoperable, respects the [LNURL](https://github.com/fiatja
  ------------ | ------------- | ------------- | ------------- | 
 [BTCpay's LNURL NFC Support plugin](https://github.com/btcpayserver/btcpayserver-plugins) | [Andrew Camilleri](https://github.com/Kukks) | NO, merchant needs to tap a button | User taps on "Scan NFC", user taps device with lnurl-withdraw, bolt11 sent to lnurl-w endpoint  |
 
+**I invite the representatives of the implementations to signal their support to this flow by adding themselves to this table.**
 ## Practical Examples ##
 In this video, the payment has been sent to my BTCpay POS, which has a plugin that enables the NFC sensor (LNURL NFC Support plugin by Andrew Camilleri).
 <br>Please note that the version is 1.0.1 so it's still early and that I had a bit of difficulty to find the NFC sensor on the back of my phone. The next version of the plugin will have textual feedback to improve the UX.
