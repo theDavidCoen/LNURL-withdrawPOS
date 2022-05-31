@@ -81,7 +81,7 @@ Other solutions:<br>
 
 **Disposable links**
 <br>Disposable cards are widely adopted by fiat services, such as Revolut, for example, but also by Lightning services with fiat ramp, such as Moon.
-A user can create a card and spend the entire amount, then the app forget the card details and it can't be used anymore.
+A user can create a card and spend the entire amount, then the app forgets the card details and it can't be used anymore.
 This may also exist here: **whenever the user spend sats using the LNURL-withdraw link, this could be "destroyed" and a new LNURL-withdraw link could be created, which "contains" the change.**
 
 **NTAG 424**
