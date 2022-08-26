@@ -95,7 +95,9 @@ open source, fully interoperable, respects the [LNURL](https://github.com/fiatja
  Name | Creator  | Auto-active NFC | Further info |
  ------------ | ------------- | ------------- | ------------- | 
 [BTCpay's LNURL NFC Support plugin](https://github.com/btcpayserver/btcpayserver-plugins) | [Andrew Camilleri](https://github.com/Kukks) | NO, merchant needs to tap a button | User taps on "Scan NFC", user taps device with lnurl-withdraw, bolt11 sent to lnurl-w endpoint
-[Voltpay IOS-ANDROID App](https://voltpay.app/) | [Michael](https://twitter.com/Talej) | NO, merchant needs to tap a button | User taps on "Scan NFC", user taps device with lnurl-withdraw |
+[Voltpay IOS-ANDROID App](https://voltpay.app/) | [Michael](https://twitter.com/Talej) | NO, merchant needs to tap a button | User taps on "Scan NFC", user taps device with NFC tags |
+[LNbits POS](https://lnbits.com/) | [arcbtc](https://github.com/lnbits/lnbits-legend/tree/main/lnbits/extensions/tpos) | NO, merchant needs to tap a button | User taps on "NFC" symbol, user taps device with NFC tags |
+[Breez POS UI](https://breez.technology/) | [ademar111190](https://github.com/breez/breezmobile/pull/930) | YES | User taps device with NFC tags and wait |
 
 **I invite the representatives of the implementations to signal their support to this flow by adding themselves to this table.**
 ## Practical Examples ##
